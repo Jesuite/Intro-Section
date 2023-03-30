@@ -6,19 +6,15 @@
 
 html{
     min-height: 100vh;
-    min-width: 100vw;
     font-family: 'Epilogue', sans-serif;
-    /* font-size: 18px; */
 }
 
 body{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    /* min-height: 100vh; */
-    /* min-width: 100vw; */
+    min-height: 100vh;
+    max-width: 100vw;
     background-color: hsl(0, 0%, 98%);
-    /* max-width: 1440px; */
 }
 
 
