@@ -102,7 +102,7 @@ body{
     width: 60%;
     min-height: 100vh;
     right: 0;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 45%, 35%);
 }
 
 .nav_links, .nav_user{
