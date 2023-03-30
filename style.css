@@ -78,11 +78,13 @@ body{
 }
 
 .btn{
+    font-family: 'Epilogue', sans-serif;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     border-radius: 15px;
     padding: 15px 20px 15px 20px;
     margin-bottom: 40px;
+    border: 0;
 }
 
 .clients{
