@@ -103,3 +103,8 @@ body{
     height: 24px;
     width: 20%;
 }
+
+.menu{
+    border: 0;
+    background-color: hsla(0, 0%, 0%, 0);
+}
