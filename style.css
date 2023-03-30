@@ -26,7 +26,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 15px 20px 15px;
+    margin: 25px 15px 25px 15px;
 }
 
 
@@ -82,7 +82,7 @@ body{
     color: hsl(0, 0%, 98%);
     border-radius: 15px;
     padding: 15px 20px 15px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .clients{
