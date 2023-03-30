@@ -22,24 +22,28 @@
 </head>
 <body>
   <nav class="navbar">
+    
     <img src="/images/logo.svg" alt="#">
-    <div>
-      <ul class="nav_links">
-        <li>Features</li>
-        <li>Company</li>
-        <li>Careers</li>
-        <li>About</li>
-      </ul>
+    
+    <div class="dropdown"> 
+      <button type="button" class="menu"><img src="/images/icon-menu.svg" alt="#"/>
+      
+        <div class="dropmenu">
+            <ul class="nav_links">
+              <li>Features<span><img src="/images/icon-arrow-down.svg" alt="#"></span></li>
+              <li>Company<span><img src="/images/icon-arrow-down.svg" alt="#"></span></li>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+            <ul class="nav_user">
+              <li>Login</li>
+              <li class="register">Register</li>
+            </ul>
+        </diV>
+      </button>
     </div>
-    <ul class="nav_user">
-      <li>Login</li>
-      <li>Register</li>
-    </ul>
-    <div class="dropmobile">
-      <button type="button" class="menu"><img src="/images/icon-menu.svg" alt="#"/></button>
-    </div>
-
   </nav>
+
   <main class="hero">
     <div class="hero_img">
       <img src="images/image-hero-mobile.png" alt="#"> 

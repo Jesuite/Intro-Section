@@ -23,24 +23,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 25px 15px 25px 15px;
-}
-
-
-.nav_links{
-    display: none;
-    align-items: center;
-    list-style: none;
-    margin-right: 300px;
-}
-
-/* .nav_links .logo{
-    margin-right: 50px;
-} */
-
-.nav_user{
-    display: none;
-    list-style: none;
-    justify-content: space-between;
+    z-index: 2;
 }
 
 .hero{
@@ -48,10 +31,12 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 0
 }
 
 .hero_img{
     overflow: hidden;
+    z-index: 0
 }
 
 .hero_img img{
@@ -82,6 +67,7 @@ body{
     padding: 15px 20px 15px 20px;
     margin-bottom: 40px;
     border: 0;
+    position: relative;
 }
 
 .clients{
@@ -103,4 +89,46 @@ body{
 .menu{
     border: 0;
     background-color: hsla(0, 0%, 0%, 0);
+}
+
+.dropmenu{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 100vh;
+    right: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.nav_links, .nav_user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.nav_links{
+    justify-content: space-between;
+    list-style: none;
+    margin: 30px;
+    height: 150px;
+}
+
+.nav_user{
+    align-self: center;
+    justify-content: space-between;
+    height: 8%;
+    list-style: none;
+}
+
+.register{
+    border: 5px;
+    border-color: hsl(0, 0%, 41%);
+    border-radius: 5px;
 }
