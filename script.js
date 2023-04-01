@@ -3,16 +3,15 @@ let menu = document.querySelector('.dropmenu');
 let closeBtn = document.getElementById('close');
 
 let open = () =>{
-    menu.style.display = 'flex';
     menu.style.right = '0%';
     menu.style.transition = 'all ease-in 1s'
     document.querySelector('.menucover').style.display = 'flex'
+    document.getElementById('close').style.transitionProperty = 'display'
     document.getElementById('close').style.display = 'flex'
     document.getElementById('open').style.display = 'none'
 }
 
 let close = () =>{
-    // menu.style.display = 'none';
     menu.style.right = '-65%';
     menu.style.transition = 'all ease-out 1s'
     document.querySelector('.menucover').style.display = 'none'
