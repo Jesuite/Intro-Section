@@ -119,7 +119,7 @@ body{
 .nav_links, .nav_user{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     position: relative;
     width: 80%;
     /* z-index: 2; */
@@ -144,6 +144,7 @@ body{
 .login, .register{
     margin: 10px 0;
     width: 100%;
+    text-align: center;
 }
 
 .register{
@@ -173,11 +174,11 @@ body{
 }
 
 .menucover{
-    /* display: none; */
+    display: none;
     min-height: 100vh;
     min-width: 100vw;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     background-color: hsl(0, 0%, 0%);
     opacity:70%;
 }
