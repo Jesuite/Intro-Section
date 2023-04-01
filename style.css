@@ -174,8 +174,8 @@ body{
 
 .menucover{
     /* display: none; */
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     position: absolute;
     z-index: 1;
     background-color: hsl(0, 0%, 0%);
