@@ -22,10 +22,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 15px 25px 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+    height: 15vh;
     /* z-index: 1; */
 }
-
 
 .hero{
     display: flex;
@@ -89,6 +90,7 @@ body{
 
 .dropdown{
     display: flex;
+    padding: 10px;
 }
 
 .menu{
@@ -99,12 +101,13 @@ body{
 }
 
 .dropmenu{
+    display: none;
     font-family: 'Epilogue', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: hsl(0, 0%, 41%);
     position: absolute;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     width: 65%;
     min-height: 100vh;
@@ -170,6 +173,7 @@ body{
 }
 
 .menucover{
+    display: none;
     height: 100vh;
     width: 100vw;
     position: absolute;
