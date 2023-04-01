@@ -25,7 +25,8 @@ body{
     margin-bottom: 10px;
     padding: 10px 15px;
     height: 10vh;
-    /* z-index: 1; */
+    overflow: hidden;
+    z-index: 1;
 }
 
 .hero{
@@ -69,7 +70,7 @@ body{
     padding: 15px 20px 15px 20px;
     margin-bottom: 40px;
     border: 0;
-    position: relative;
+    /* position: relative; */
 }
 
 .clients{
@@ -91,28 +92,28 @@ body{
 .dropdown{
     display: flex;
     padding: 10px;
+    /* overflow-x: hidden; */
 }
 
 .menu{
     border: 0;
     background-color: hsla(0, 0%, 0%, 0);
-    
-
 }
 
 .dropmenu{
-    display: none;
+    /* display: none; */
+    display: flex;
     font-family: 'Epilogue', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: hsl(0, 0%, 41%);
     position: absolute;
-    /* display: flex; */
+    /* transform: translateX(100%); */
     flex-direction: column;
     width: 65%;
-    min-height: 100vh;
-    right: 0;
-    top:0;
+    height: 100vh;
+    right: -65%;
+    top: 0;
     background-color: hsl(0, 0%, 98%);
     z-index: 3;
 }
@@ -177,7 +178,7 @@ body{
 .menucover{
     display: none;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
     position: absolute;
     z-index: 0;
     background-color: hsl(0, 0%, 0%);
@@ -187,4 +188,5 @@ body{
 #close{
     z-index: 4;
     display: none;
+    padding: 10px;
 }
