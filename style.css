@@ -96,7 +96,7 @@ body{
 .menu{
     border: 0;
     background-color: hsla(0, 0%, 0%, 0);
-    z-index: 2;
+    
 
 }
 
@@ -114,6 +114,7 @@ body{
     right: 0;
     top:0;
     background-color: hsl(0, 0%, 98%);
+    z-index: 3;
 }
 
 .nav_links, .nav_user{
