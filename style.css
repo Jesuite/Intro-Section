@@ -23,7 +23,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
-    padding: 10px;
+    padding: 5px 10px;
     height: 15vh;
     /* z-index: 1; */
 }
