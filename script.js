@@ -28,9 +28,11 @@ let toggleF = () =>{
 
     if(featureVisibility === "false"){
         featureNavigation.setAttribute('data-show', 'true')
+        document.querySelector('#f').src = "/images/icon-arrow-up.svg"
     }
     else if(featureVisibility === 'true'){
         featureNavigation.setAttribute('data-show', 'false')
+        document.querySelector('#f').src = "/images/icon-arrow-down.svg"
     }
 }
 
@@ -39,9 +41,11 @@ let toggleC = () =>{
 
     if(companyVisibility === "false"){
         companyNavigation.setAttribute('data-show', 'true')
+        document.querySelector('#c').src = "/images/icon-arrow-up.svg"
     }
     else if(companyVisibility === 'true'){
         companyNavigation.setAttribute('data-show', 'false')
+        document.querySelector('#c').src = "/images/icon-arrow-up.svg"
     }
 }
 
