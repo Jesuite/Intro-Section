@@ -75,7 +75,6 @@ body{
     padding: 15px 20px 15px 20px;
     margin-bottom: 40px;
     border: 0;
-    position: relative;
 }
 
 .clients{
@@ -199,7 +198,7 @@ body{
 }
 
 .closeBtn > img{
-    z-index: 2;
+    z-index: 4;
     display: flex;
     object-fit: scale-down;
     align-items: center;
