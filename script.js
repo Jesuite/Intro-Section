@@ -45,7 +45,7 @@ let toggleC = () =>{
     }
     else if(companyVisibility === 'true'){
         companyNavigation.setAttribute('data-show', 'false')
-        document.querySelector('#c').src = "/images/icon-arrow-up.svg"
+        document.querySelector('#c').src = "/images/icon-arrow-down.svg"
     }
 }
 
