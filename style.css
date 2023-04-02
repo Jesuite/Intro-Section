@@ -187,7 +187,7 @@ body{
 }
 
 
-.menucover{
+#menucover{
     min-height: 100vh;
     width: 100%;
     position: fixed;

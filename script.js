@@ -4,6 +4,7 @@ let featureNavigation = document.querySelector('#featureNav');
 let companyNavigation = document.querySelector('#companyNav');
 let featureNavToggle = document.querySelector('#feature');
 let companyNavToggle = document.querySelector('#company');
+let closeNav = document.querySelector('#menucover')
 
 let toggle = () =>{
     const visibility = primaryNavigation.getAttribute('data-visible')
@@ -11,14 +12,18 @@ let toggle = () =>{
     if(visibility === 'false'){
         primaryNavigation.setAttribute('data-visible', 'true')
         mobileNavToggle.setAttribute('data-close', 'true')
-        document.querySelector('.menucover').style.opacity = '0.7'
-        document.querySelector('.menucover').style.transition = 'opacity 0.5s ease-in'
+        document.querySelector('#menucover').style.opacity = '0.7'
+        document.querySelector('#menucover').style.transition = 'opacity 0.5s ease-in'
     }
     else if(visibility === 'true'){
         primaryNavigation.setAttribute('data-visible', 'false')
         mobileNavToggle.setAttribute('data-close', 'false')
-        document.querySelector('.menucover').style.opacity = '0'
-        document.querySelector('.menucover').style.transition = 'opacity 0.5s ease-out'
+        document.querySelector('#menucover').style.opacity = '0'
+        document.querySelector('#menucover').style.transition = 'opacity 0.5s ease-out'
+        featureNavigation.setAttribute('data-show', 'false')
+        document.querySelector('#f').src = "/images/icon-arrow-down.svg"
+        companyNavigation.setAttribute('data-show', 'false')
+        document.querySelector('#c').src = "/images/icon-arrow-down.svg"
     }
     // console.log(visibility)
 }
@@ -49,6 +54,18 @@ let toggleC = () =>{
     }
 }
 
+let close = () =>{
+    primaryNavigation.setAttribute('data-visible', 'false')
+    mobileNavToggle.setAttribute('data-close', 'false')
+    document.querySelector('#menucover').style.opacity = '0'
+    document.querySelector('#menucover').style.transition = 'opacity 0.5s ease-out'
+    featureNavigation.setAttribute('data-show', 'false')
+    document.querySelector('#f').src = "/images/icon-arrow-down.svg"
+    companyNavigation.setAttribute('data-show', 'false')
+    document.querySelector('#c').src = "/images/icon-arrow-down.svg"
+}
+
 mobileNavToggle.addEventListener("click", toggle);
 featureNavToggle.addEventListener("click", toggleF);
 companyNavToggle.addEventListener("click", toggleC);
+closeNav.addEventListener("click", close)
