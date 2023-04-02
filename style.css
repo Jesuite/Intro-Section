@@ -104,9 +104,18 @@ body{
 }
 
 #featureNav, #companyNav{
+    display: none;
     list-style: none;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+#featureNav[data-show = "true"]{
+    display: block;
+}
+
+#companyNav[data-show = "true"]{
+    display: block;
 }
 
 #feature span img, #company span img{

@@ -1,5 +1,9 @@
 let primaryNavigation = document.querySelector("#primaryNavigation");
 let mobileNavToggle = document.querySelector('.mobileNavToggle');
+let featureNavigation = document.querySelector('#featureNav');
+let companyNavigation = document.querySelector('#companyNav');
+let featureNavToggle = document.querySelector('#feature');
+let companyNavToggle = document.querySelector('#company');
 
 let toggle = () =>{
     const visibility = primaryNavigation.getAttribute('data-visible')
@@ -19,4 +23,28 @@ let toggle = () =>{
     // console.log(visibility)
 }
 
+let toggleF = () =>{
+    const featureVisibility = featureNavigation.getAttribute('data-show')
+
+    if(featureVisibility === "false"){
+        featureNavigation.setAttribute('data-show', 'true')
+    }
+    else if(featureVisibility === 'true'){
+        featureNavigation.setAttribute('data-show', 'false')
+    }
+}
+
+let toggleC = () =>{
+    const companyVisibility = companyNavigation.getAttribute('data-show')
+
+    if(companyVisibility === "false"){
+        companyNavigation.setAttribute('data-show', 'true')
+    }
+    else if(companyVisibility === 'true'){
+        companyNavigation.setAttribute('data-show', 'false')
+    }
+}
+
 mobileNavToggle.addEventListener("click", toggle);
+featureNavToggle.addEventListener("click", toggleF);
+companyNavToggle.addEventListener("click", toggleC);
