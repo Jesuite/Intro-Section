@@ -25,27 +25,24 @@
 <body>
   
   <div class="menucover"></div>
-  <nav class="navbar">
-    <img  src="/images/logo.svg" alt="#">
-    <div class="dropdown">
-      <button type="button"><img id = 'open'src="/images/icon-menu.svg" alt="#" /></button>
-      <div class="dropmenu">
-        <div class="closeBtn">
-          <button type="button" class="close"><img id = 'close'src="/images/icon-close-menu.svg" alt="#" /></button>
-        </div>
-        <ul class="nav_links">
-          <li class="feature">Features<span><img src="/images/icon-arrow-down.svg" alt="#"></span></li>
-          <li class="company">Company<span><img src="/images/icon-arrow-down.svg" alt="#"></span></li>
-          <li>Careers</li>
-          <li>About</li>
-        </ul>
-        <div class="nav_user">
-              <p class="login">Login</p>
-              <p class="register">Register</p>
-        </div>
-      </diV>
+  <header class="primaryHeader">
+    <div>
+      <img src="/images/logo.svg" alt="#" class="logo">
     </div>
-  </nav>
+    <div>
+      <button class="mobileNavToggle" data-close="false"></button>
+    </div>
+    <nav>
+        <ul id="primaryNavigation" data-visible ='false'>
+            <li id="feature">Features <span><img src="/images/icon-arrow-down.svg" alt="#"></span></li>
+            <li id="company">Company <span><img src="/images/icon-arrow-down.svg" alt="#"></span></li>
+            <li>Careers</li>
+            <li>About</li>
+            <li id="login">Login</li>
+            <li id="register">Register</li>
+        </ul>
+    </nav>
+  </header>
 
   <section class="hero">
     <div class="hero_img">
