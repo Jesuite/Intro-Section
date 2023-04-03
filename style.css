@@ -44,7 +44,6 @@ body{
     aspect-ratio: 1;
     width: 26px;
     transition: background .1s ease-in;
-    cursor: pointer;
 }
 
 .mobileNavToggle[data-close = "true"]{
@@ -67,7 +66,7 @@ body{
     transition: transform .5s ease-in;
     z-index: 1000;
     overflow-y: scroll;
-    scrollbar-;
+    overflow-x: hidden;
 }
 
 #primaryNavigation[data-visible="true"]{
@@ -77,7 +76,6 @@ body{
 #feature, #company, #careers, #about{
     padding: 10px;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
 
@@ -86,7 +84,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 #login{
