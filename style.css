@@ -64,6 +64,7 @@ body{
     transform: translateX(100%);
     transition: transform .5s ease-in;
     z-index: 1000;
+    overflow-y: scroll;
 }
 
 #primaryNavigation[data-visible="true"]{
@@ -99,8 +100,12 @@ body{
 
 #feature, #company{
     display: flex;
-    /* align-items: center; */
-    flex-direction: column;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+#feature img, #company img{
+    margin: 5px;
 }
 
 #featureNav, #companyNav{
@@ -195,3 +200,5 @@ body{
     background-color: hsl(0, 0%, 0%);
     opacity:0;
 }
+
+@media()
