@@ -59,6 +59,7 @@ body{
     min-height: 100vh;
     position: fixed;
     inset: 0 0 0 35%;
+    color: hsl(0, 0%, 41%);
     background: hsl(0, 0%, 98%);
     padding: 70px 10px 10px 10px;
     transform: translateX(100%);
