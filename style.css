@@ -220,6 +220,9 @@ body{
 
 
 @media(min-width: 769px){
+    .body{
+        height: 100vw;
+    }
     .primaryHeader{
         margin: .8rem
     }
