@@ -23,16 +23,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .logo{
-    margin: 10px;
-    padding: 10px;
+    margin: .7em;
+    padding: .7em;
 }
 
 .mobileNavToggle{
-    /* margin: 10px; */
-    padding: 10px;
+    margin: .7em;
+    padding: .7em;
     display: block;
     border: 0;
     background: url(/images/icon-menu.svg);
@@ -40,7 +41,7 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    right: 3vw;
+    right: 0;
     z-index: 9999;
     aspect-ratio: 1/1;
     width: 50px;
@@ -152,15 +153,15 @@ body{
 .hero_img{
     overflow: hidden;
     width: 100%;
-    /* object-fit: contain; */
+    object-fit: contain;
 }
 
-.hero_img :nth-child(1){
+.mobile{
     width: 100%;
     object-fit: contain;
 }
 
-.hero_img :nth-child(2){
+.desktop{
     display: none;
 }
 
@@ -170,15 +171,14 @@ body{
 
 .hero_txt{
     margin: 1em auto;
-    font-size: 2.2rem;
+    font-size: 5rem;
     color: hsl(0, 0%, 8%);
 }
 
 .hero_subtxt{
-    font-size: 1rem;
+    font-size: 3rem;
     line-height: 1.5;
     margin: 1em auto;
-    /* padding: 0 10px 0 10px; */
     color: hsl(0, 0%, 41%);
 }
 
@@ -217,86 +217,10 @@ body{
     opacity:0;
 }
 
-@media(min-width: 426px){
-    .hero{
-        display: flex;
-        max-width: 100vw;
-        --widthh: 100vw
-        /* overflow: hidden; */
-        flex-direction: row-reverse;
-        /* justify-content: center;
-        align-items: center; */
-        margin: 10px 40px 50px 40px;
-        /* overflow-y: visible; */
-    }
 
-    .hero_img{
-        width: 100%;
-        overflow: hidden;
-        margin-left: 5vw;
-    }
-
-    .hero_img :nth-child(2){  
-        display:unset;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        /* object-position: center; */
-        
-    }
-
-    .hero_img :first-child{
-        display: none;
-    }
-
-    .hero_txt{
-        margin: 0;
-        font-size: clamp(3rem, 6.2vw, 7rem);
-        color: hsl(0, 0%, 8%);
-        margin: 40px 0 40px 0;
-
-    }
-    
-    .hero_subtxt{
-        font-size: clamp(1rem, 2vw, 1.5rem);
-        line-height: 1.5;
-        margin: 0  0 40px 0;
-        padding: 0 20px 0 0;
-        color: hsl(0, 0%, 41%);
-    }
-
-    .info{
-        grid-area: heroTxt;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: start;
-        /* margin-right: 5vw; */
-    }
-
-    .desktop{
-        margin-left: 0vw;
-    }
-
-    .clients{
-        margin: 0 10px;
-        /* justify-self: flex-end; */
-    }
-    
-    .btn{
-        margin-bottom: 6vw;
-        font-size: clamp(1rem, 2vw, 1.5rem);
-    }
-
-    .hero_img{
-        width: 100vw;
-        margin: 0;
-    }
-}
-
-/* @media(min-width: 769px){
+@media(min-width: 769px){
     .primaryHeader{
-        margin: 2rem
+        margin: .8rem
     }
 
     .mobileNavToggle{
@@ -309,42 +233,59 @@ body{
         position:unset;
         flex-direction: row;
         transform: translateX(0);
-        min-height: unset;
-        padding: 10px;
+        padding: 1em;
         overflow-y: unset;
-        margin: 0;
-        padding: 0;
     }
     
-    .logo{
-        margin: 0;
-        padding: 0;
-    }
-
-    #login, #register{
-        display: unset;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-    }
 
     #feature, #company, #careers, #about, #login, #register{
         margin: 0;
     }
     
+    #login, #register{
+        display: inline;
+    }
+    
+    #login{
+        margin: 0;
+        padding: .7em;
+    }
+    
+    #register{
+        border: 2px solid;
+        border-color: hsl(0, 0%, 41%);
+        border-radius: 15px;
+        padding: .7em;
+        margin: 0;
+    }
+
     .hero_subtxt{
         font-size: clamp(1rem, 2vw, 1.5rem);
         line-height: 1.5;
-        margin: 0  40px 40px 0;
-        padding: 0 60px 0 0;
         color: hsl(0, 0%, 41%);
     }
 
     .hero{
+        display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 12vw;
-        overflow-y: visible;
+        margin: auto;
+        width: 90%;
     }
-} */
+
+    .mobile{
+        display: none;
+    }
+    
+    .desktop{
+        width: 100%;
+        object-fit: contain;
+        display: inline-block;
+    }
+
+
+    .info{
+        display: block;
+        width: 100%;
+        margin: 1em;
+    }
+}
