@@ -23,7 +23,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 .logo{
@@ -199,11 +198,12 @@ body{
     overflow: hidden;
     align-items: center;
     justify-content: space-around;
+    height: 15%;
 }
 
 .clients img{
     object-fit: contain;
-    height: 24px;
+    height: 80%;
     width: 20%;
 }
 
@@ -262,7 +262,7 @@ body{
     .hero{
         display: flex;
         flex-direction: row-reverse;
-        margin: auto;
+        margin: 1em auto;
         width: 80%;
         overflow-x: hidden;
     }
@@ -288,19 +288,19 @@ body{
 
     .hero_txt{
         margin: 1em auto;
-        font-size: 5rem;
+        font-size: clamp(2rem, 7vw, 5rem);
         color: hsl(0, 0%, 8%);
     }
     
     .hero_subtxt{
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 1.5vw, 1.4rem);
         line-height: 1.5;
         margin: 1em auto;
         color: hsl(0, 0%, 41%);
     }
 
     .btn{
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 1.5vw, 1.4rem);
         margin: 2em auto 5em;
     }
 }
