@@ -171,12 +171,12 @@ body{
 
 .hero_txt{
     margin: 1em auto;
-    font-size: 5rem;
+    font-size: 2.2rem;
     color: hsl(0, 0%, 8%);
 }
 
 .hero_subtxt{
-    font-size: 3rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 1em auto;
     color: hsl(0, 0%, 41%);
