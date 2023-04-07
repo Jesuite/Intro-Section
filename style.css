@@ -220,9 +220,6 @@ body{
 
 
 @media(min-width: 769px){
-    .body{
-        height: 100vw;
-    }
     .primaryHeader{
         margin: .8rem
     }
@@ -268,6 +265,7 @@ body{
         flex-direction: row-reverse;
         margin: 1em auto;
         width: 80%;
+        height: 80%;
         overflow-x: hidden;
     }
 
