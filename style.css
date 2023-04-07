@@ -187,9 +187,9 @@ body{
     font-size: 1rem;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
-    border-radius: 15px;
-    padding: 1em;
-    margin: 1em auto;
+    border-radius: 1em;
+    padding: 1.2em;
+    margin: 1em auto 3em;
     border: 0;
 }
 
@@ -259,17 +259,12 @@ body{
         margin: 0;
     }
 
-    .hero_subtxt{
-        font-size: clamp(1rem, 2vw, 1.5rem);
-        line-height: 1.5;
-        color: hsl(0, 0%, 41%);
-    }
-
     .hero{
         display: flex;
         flex-direction: row-reverse;
         margin: auto;
-        width: 90%;
+        width: 80%;
+        overflow-x: hidden;
     }
 
     .mobile{
@@ -280,12 +275,32 @@ body{
         width: 100%;
         object-fit: contain;
         display: inline-block;
+        margin-left:auto;
     }
 
 
     .info{
         display: block;
         width: 100%;
-        margin: 1em;
+        margin-right: clamp(4em, 7vw, 5em);
+        text-align: left;
+    }
+
+    .hero_txt{
+        margin: 1em auto;
+        font-size: 5rem;
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .hero_subtxt{
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin: 1em auto;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .btn{
+        font-size: 1.4rem;
+        margin: 2em auto 5em;
     }
 }
