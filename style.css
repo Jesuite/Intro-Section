@@ -76,7 +76,7 @@ body{
     transform: translateX(0%);
 }
 
-#feature, #company, #careers, #about{
+#feature, #company, #careers, #about, #login, #register{
     padding: .5em;
     margin: .5em auto;
     width: 100%;
@@ -85,9 +85,7 @@ body{
 
 
 #login, #register{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align:center;
 }
 
 #login{
@@ -102,7 +100,6 @@ body{
     border-radius: 15px;
     padding: .7em;
     margin: 1em auto;
-    width: 90%;
 }
 
 #feature, #company{
@@ -242,6 +239,7 @@ body{
     #feature, #company, #careers, #about, #login, #register{
         margin: 0;
     }
+
     
     #login, #register{
         display: inline;
@@ -265,7 +263,6 @@ body{
         flex-direction: row-reverse;
         margin: 1em auto;
         width: 80%;
-        height: 80%;
         overflow-x: hidden;
     }
 
