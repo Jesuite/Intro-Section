@@ -227,7 +227,7 @@ body{
         justify-content: space-between;
         min-height: max-content;
         background: transparent;
-        height: 10vh;
+        height: inherit;
         width: 80%;
         inset: 0 0 0 20%;
         flex-direction: row;
@@ -268,15 +268,15 @@ body{
         padding: 1em;
         border-radius: .6em;
         box-shadow: 3px 3px 20px hsla(0, 0%, 0%, 0.12);
-        cursor: pointer;
+        top: 80px
     }
 
     #featureNav{
-        left: -70px;
+        left: -60px;
     }
 
     #companyNav{
-        left: 150px
+        left: 170px
     }
     
     #login, #register{
