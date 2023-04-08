@@ -278,7 +278,7 @@ body{
         padding: 1em;
         border-radius: .6em;
         box-shadow: 3px 3px 20px hsla(0, 0%, 0%, 0.12);
-        top: 70px
+        top: 70px;
     }
 
     #featureNav{
@@ -286,7 +286,7 @@ body{
     }
 
     #companyNav{
-        left: 160px
+        left: 160px;
     }
     
     #login{
@@ -345,5 +345,13 @@ body{
     .btn{
         font-size: clamp(1rem, 1.5vw, 1.4rem);
         margin: 2em auto 4em;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        color:hsl(0, 0%, 0%);
+        border: 2px solid;
+        border-color: hsl(0, 0%, 0%);
+        background-color: hsl(0, 0%, 98%);
     }
 }
