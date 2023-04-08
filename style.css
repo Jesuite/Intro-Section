@@ -228,8 +228,8 @@ body{
         min-height: max-content;
         background: transparent;
         height: inherit;
-        width: 80%;
-        inset: 0 0 0 20%;
+        width: 85%;
+        inset: 0 0 0 15%;
         flex-direction: row;
         transform: translateX(0);
         padding: 1em;
@@ -254,6 +254,17 @@ body{
     #feature, #company, #careers, #about, #login, #register{
         margin: auto 1em;
         width: max-content;
+        cursor: pointer;
+    }
+    
+    #feature:hover, #feature > img:hover, #company:hover, #careers:hover, #about:hover, #login:hover{
+        color: hsl(0, 0%, 0%);
+        fill: hsl(0, 0%, 0%);
+    }
+
+    #register:hover{
+        color: hsl(0, 0%, 0%);
+        border-color: hsl(0, 0%, 0%);
     }
 
     #feature, #company{
@@ -274,7 +285,7 @@ body{
     }
 
     #companyNav{
-        left: 170px
+        left: 160px
     }
     
     #login{
@@ -286,7 +297,7 @@ body{
         border: 2px solid;
         border-color: hsl(0, 0%, 41%);
         border-radius: 15px;
-        padding: .7em;
+        padding: .7em 1em;
         /* margin: 0; */
     }
 
