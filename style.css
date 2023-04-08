@@ -82,7 +82,9 @@ body{
     width: 100%;
 }
 
-
+.userlist, .menulist{
+    list-style: none;
+}
 
 #login, #register{
     text-align:center;
