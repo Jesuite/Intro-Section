@@ -228,8 +228,8 @@ body{
         min-height: max-content;
         background: transparent;
         height: inherit;
-        width: 85%;
-        inset: 0 0 0 15%;
+        width: 80%;
+        inset: 0 0 0 20%;
         flex-direction: row;
         transform: translateX(0);
         padding: 1em;
@@ -270,7 +270,7 @@ body{
     }
 
     #featureNav{
-        left: -60px;
+        left: -40px;
     }
 
     #companyNav{
