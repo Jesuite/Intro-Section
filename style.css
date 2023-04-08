@@ -258,6 +258,10 @@ body{
         width: max-content;
     }
 
+    #feature, #company{
+        cursor: pointer;
+    }
+
     #featureNav, #companyNav{
         position: absolute;
         background-color: hsl(0, 0%, 98%);
