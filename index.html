@@ -33,27 +33,35 @@
       <button class="mobileNavToggle" data-close="false"></button>
     </div>
     <nav>
-        <ul id="primaryNavigation" data-visible ='false'>
-            <li class="navItem"><span id="feature">Features <img src="/images/icon-arrow-down.svg" alt="#" id="f"></span></button>
-              <ul id="featureNav" data-show ="false">
-                <li><span><img src="/images/icon-todo.svg" alt="#"></span> Todo list</li>
-                <li><span><img src="/images/icon-calendar.svg" alt="#"></span> Calender</li>
-                <li><span><img src="/images/icon-reminders.svg" alt="#"></span> Reminders</li>
-                <li><span><img src="/images/icon-planning.svg" alt="#"></span> Planning</li>
-              </ul>
-            </li>
-            <li class="navItem"><span id="company">Company <img src="/images/icon-arrow-down.svg" alt="#" id="c"></span>
-              <ul id="companyNav" data-show= 'false'>
-                <li> History</li>
-                <li> Our Team</li>
-                <li> Blog</li>
-              </ul>
-            </li>
-            <li class="navItem" id="careers">Careers</li>
-            <li class="navItem" id="about">About</li>
+      <div id="primaryNavigation" data-visible ='false'>
+        <div>
+          <ul class="menulist">
+              <li class="navItem" ><span id="feature">Features <img src="/images/icon-arrow-down.svg" alt="#" id="f"></span>
+                <ul id="featureNav" data-show ="false">
+                  <li><span><img src="/images/icon-todo.svg" alt="#"></span> Todo list</li>
+                  <li><span><img src="/images/icon-calendar.svg" alt="#"></span> Calender</li>
+                  <li><span><img src="/images/icon-reminders.svg" alt="#"></span> Reminders</li>
+                  <li><span><img src="/images/icon-planning.svg" alt="#"></span> Planning</li>
+                </ul>
+              </li>
+              <li class="navItem"><span id="company">Company <img src="/images/icon-arrow-down.svg" alt="#" id="c"></span>
+                <ul id="companyNav" data-show= 'false'>
+                  <li> History</li>
+                  <li> Our Team</li>
+                  <li> Blog</li>
+                </ul>
+              </li>
+              <li class="navItem" id="careers">Careers</li>
+              <li class="navItem" id="about">About</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="userlist">
             <li class="navItem" id="login">Login</li>
             <li class="navItem" id="register">Register</li>
-        </ul>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 

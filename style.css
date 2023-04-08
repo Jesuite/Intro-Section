@@ -105,11 +105,10 @@ body{
 #feature, #company{
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
 }
 
 #feature img, #company img{
-    margin: 5px;
+    margin-left: .5em;
 }
 
 #featureNav, #companyNav{
@@ -119,12 +118,8 @@ body{
     /* margin-top: 10px; */
 }
 
-#featureNav[data-show = "true"]{
-    display: block;
-}
-
-#companyNav[data-show = "true"]{
-    display: block;
+#featureNav[data-show = "true"], #companyNav[data-show = "true"]{
+    display:block;
 }
 
 #feature span img, #company span img{
@@ -228,18 +223,52 @@ body{
     #primaryNavigation{
         display: flex;
         align-items: center;
-        position:unset;
+        position:fixed;
+        justify-content: space-between;
+        min-height: max-content;
+        background: transparent;
+        height: 10vh;
+        width: 80%;
+        inset: 0 0 0 20%;
         flex-direction: row;
         transform: translateX(0);
         padding: 1em;
         overflow-y: unset;
     }
     
+    .menulist{
+        list-style: none;
+        display: flex;
+    }
+
+    .menulist li{
+        margin: auto 1em;
+    }
+
+    .userList{
+        list-style: none;
+    }
 
     #feature, #company, #careers, #about, #login, #register{
         margin: 0;
+        width: max-content;
     }
 
+    #featureNav, #companyNav{
+        position: absolute;
+        background-color: hsl(0, 0%, 98%);
+        padding: 1em;
+        border-radius: .6em;
+        box-shadow: 3px 3px 20px hsla(0, 0%, 0%, 0.12);
+    }
+
+    #featureNav{
+        left: -70px;
+    }
+
+    #companyNav{
+        left: 150px
+    }
     
     #login, #register{
         display: inline;
