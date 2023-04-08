@@ -259,9 +259,8 @@ body{
         cursor: pointer;
     }
     
-    #feature:hover, #feature > img:hover, #company:hover, #careers:hover, #about:hover, #login:hover{
+    #feature:hover, #company:hover, #careers:hover, #about:hover, #login:hover{
         color: hsl(0, 0%, 0%);
-        fill: hsl(0, 0%, 0%);
     }
 
     #register:hover{
